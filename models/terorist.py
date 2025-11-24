@@ -4,5 +4,5 @@ from sqlmodel import Field,SQLModel
 
 class Terorist(SQLModel, table = True):
     id : Optional[int] = False(default= None, primary_key= True)
-    name : str    
+    name : str = Field(index=True) 
    
