@@ -90,7 +90,7 @@ def deleate_report(session:Session, id: Optional[int]):
         return False
     report = session.get(Report,id)
     if not report:
-        print(f"id {id} not found")
+        print(f"id: {id} not found")
         return False
     session.delete(report)
     session.commit()
